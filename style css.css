@@ -7,15 +7,18 @@ j
     --gris-tres-claire:#F8F8F8;
     --gris-clair:#eee;
 }
+h1 { 
+   color: var(--violet-fonce); 
+}
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  body {
-background-color:var(--gris-tres-claire) ;
-font-family: Roboto;
-line-height: 1.6;
+body {
+    background-color:var(--gris-tres-claire) ;
+    font-family: Roboto;
+    line-height: 1.6;
 
 }
 header {
@@ -26,7 +29,7 @@ header {
     z-index: 100;
     display: flex;
     justify-content: space-between;
-m    padding: 2rem 3rem;
+    padding: 2rem 3rem;
 }
 
 header div a {
@@ -81,6 +84,97 @@ a.active {
     color:var(--violet-Doux)
 }
 a.active::after {
+width: 100;
 
 }
-width: 100
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;;
+    text-align: center;
+    margin: 10rem 2rem;
+
+}
+
+.hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--violet-Doux);
+}
+
+.hero h1{
+    color: var(--violet-Doux);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+
+}
+
+.hero p{
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+
+}
+
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-Doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600px;
+    margin-top: 1rem;
+
+
+}
+
+.hero a:hover{
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+
+}
+
+.apropos {
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+
+}
+
+section h2 {
+    color: var(--violet-Doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-Doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+
+}
+
+.apropos p {
+    margin-bottom: 2rem;
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+
+} 
+
+
+
