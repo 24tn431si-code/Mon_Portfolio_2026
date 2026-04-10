@@ -1,38 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio 2026</title>
-    <link rel="stylesheet" href="style css.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <a href="">Mon portfolio</a>
+        <div class="logo">
+            <a href="index.html">Mon portfolio</a>
         </div>
-        <ul>
-            <a href="index.html"><li>Acceuil</li></a>
-            <a href="projet.html"><li>Projets</li></a>
-            <a href="passion.html"><li>Passions</li></a>
-            <a href="divertissement.html" class="active"><li>Divertissements</li></a>
-            <a href="contact.html"><li>Contacts</li></a>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissement.html">Divertissement</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-     <main>
-        <h1>contactez-nous</h1>
-     </main>
 
-<footer>
-        <p>©CopyRight 2026 Jean-luc. Tous droits réservés.</p>
-        <img src="Images/github.png" alt="github" width="20">
-        <img src="Images/linkedln.png" alt="linkedIn" width="20">
-        <img src="Images/X.png" alt="x" width="20">
-</footer>
-    
+    <main class="page-container">
+        <section class="titre-section">
+            <h1>Travaillons Ensemble</h1>
+            <div class="barre"></div>
+            <p class="sous-titre">Vous avez un projet, une idée, ou vous cherchez un stagiaire motivé ? N'hésitez pas à me contacter.</p>
+        </section>
+
+        <div class="contact-wrapper">
+            <div class="contact-info-container">
+                <h2>Mes Coordonnées</h2>
+                <p>Je suis généralement très réactif et je m'efforce de répondre à tous les messages dans un délai de 24 à 48 heures ouvrables.</p>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Localisation</h3>
+                        <p>Lubumbashi, République Démocratique du Congo</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Email</h3>
+                        <p>contact.saint luc@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Téléphone</h3>
+                        <p>+243 XX XXX XXXX</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="info-texte">
+                        <h3>Disponibilité</h3>
+                        <p>Lundi - Vendredi, 09h00 à 18h00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formulaire-container">
+                <h2>Envoyez-moi un message</h2>
+                <form action="#" method="POST" class="formulaire-contact">
+                    <div class="groupe-champs">
+                        <div class="champ">
+                            <label for="nom">Nom complet <span class="requis">*</span></label>
+                            <input type="text" id="nom" name="nom" placeholder="John Doe" required>
+                        </div>
+                        <div class="champ">
+                            <label for="email">Adresse Email <span class="requis">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@exemple.com" required>
+                        </div>
+                    </div>
+
+                    <div class="champ">
+                        <label for="sujet">Sujet de votre message</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="Proposition de projet, Offre de stage...">
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Votre Message <span class="requis">*</span></label>
+                        <textarea id="message" name="message" rows="6" placeholder="Décrivez votre besoin ou votre idée ici..." required></textarea>
+                    </div>
+
+                    <div class="champ-checkbox">
+                        <input type="checkbox" id="rgpd" name="rgpd" required>
+                        <label for="rgpd">J'accepte que mes données soient traitées pour me recontacter.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fa-solid fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Jman. Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

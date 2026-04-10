@@ -1,38 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio 2026</title>
-    <link rel="stylesheet" href="style css.css">
+    <title>Divertissement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <a href="">Mon portfolio</a>
+        <div class="logo">
+            <a href="index.html">Mon portfolio</a>
         </div>
-        <ul>
-            <a href="index.html" class="active"><li>Acceuil</li></a>
-            <a href="projet.html"><li>Projets</li></a>
-            <a href="passion.html"><li>Passions</li></a>
-            <a href="divertissement.html"><li>Divertissements</li></a>
-            <a href="contact.html"><li>Contacts</li></a>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissement.html" class="active">Divertissement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-     <main>
-        <h1>contactez-nous</h1>
-     </main>
 
-<footer>
-        <p>©CopyRight 2026 Jean-luc. Tous droits réservés.</p>
-        <img src="Images/github.png" alt="github" width="20">
-        <img src="Images/linkedln.png" alt="linkedIn" width="20">
-        <img src="Images/X.png" alt="x" width="20">
-</footer>
-    
+    <main class="page-container">
+        <section class="titre-section">
+            <h1>Mes Divertissements</h1>
+            <div class="barre"></div>
+            <p class="sous-titre">Ce que je fais pour me détendre et m'inspirer en dehors du code.</p>
+        </section>
+
+        <section class="categorie-divertissement">
+            <div class="en-tete-categorie">
+                <i class="fa-solid fa-film"></i>
+                <h2>Films & Séries</h2>
+            </div>
+            <div class="grille-divertissement">
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/GT.webp" alt="Science Fiction">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Univers Science-Fiction</h3>
+                        <p>Je suis un grand amateur de films de science-fiction qui explorent les futurs dystopiques, l'intelligence artificielle et l'exploration spatiale. Ces œuvres stimulent souvent mon imagination pour de nouvelles interfaces.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Interstellar</span>
+                            <span class="tag-div">Matrix</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/meteo.webp" alt="Séries Tech">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Séries Technologiques</h3>
+                        <p>Les séries qui mettent en avant le monde de la cybersécurité, du piratage éthique ou de la création de startups me passionnent. C'est fascinant de voir comment notre domaine est représenté à l'écran.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Mr. Robot</span>
+                            <span class="tag-div">Silicon Valley</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/univers.webp" alt="Animation">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Animation Japonaise</h3>
+                        <p>Une véritable source d'inspiration visuelle. J'apprécie particulièrement les œuvres aux directions artistiques très poussées, ce qui m'aide inconsciemment dans mes propres choix de design UI/UX.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Cyberpunk</span>
+                            <span class="tag-div">Studio Ghibli</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="categorie-divertissement">
+            <div class="en-tete-categorie">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Jeux Vidéo & Réflexion</h2>
+            </div>
+            <div class="grille-divertissement">
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/Jeux.webp" alt="Jeux de stratégie">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Jeux de Stratégie (RTS)</h3>
+                        <p>La gestion des ressources, l'anticipation des mouvements de l'adversaire et la planification à long terme sont des mécaniques qui font écho à la conception d'architectures logicielles complexes.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Gestion</span>
+                            <span class="tag-div">Tactique</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/jeu enigme.webp" alt="Jeux d'Énigmes">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Jeux d'Énigmes</h3>
+                        <p>Résoudre des casse-têtes complexes est pour moi le prolongement logique du débogage de code. J'adore les jeux qui me poussent à penser "en dehors de la boîte" pour trouver des solutions innovantes.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Logique</span>
+                            <span class="tag-div">Casse-tête</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/PI.webp" alt="Jeux Indépendants">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Pépites Indépendantes</h3>
+                        <p>Je soutiens souvent les développeurs indépendants. J'aime analyser comment des petites équipes arrivent à créer des chefs-d'œuvre avec des contraintes techniques et budgétaires importantes.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Indie</span>
+                            <span class="tag-div">Innovation</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="categorie-divertissement">
+            <div class="en-tete-categorie">
+                <i class="fa-solid fa-headphones"></i>
+                <h2>Musique & Littérature</h2>
+            </div>
+            <div class="grille-divertissement">
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/bande.webp" alt="Musique Douce">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Bande-son de Codage</h3>
+                        <p>La musique Lo-Fi, le Synthwave et les bandes originales de films sont mes compagnons quotidiens lors de mes longues sessions de développement. Cela m'aide à maintenir un état de "flow" optimal de concentration.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Lo-Fi</span>
+                            <span class="tag-div">Synthwave</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carte-media">
+                    <div class="image-media">
+                        <img src="image/roman.webp" alt="roman">
+                    </div>
+                    <div class="contenu-media">
+                        <h3>Romans & Thrillers</h3>
+                        <p>Pour décrocher des écrans, je me plonge dans des thrillers psychologiques ou des romans d'anticipation. La lecture est mon moyen privilégié pour améliorer mon vocabulaire et ma concentration prolongée.</p>
+                        <div class="tags-media">
+                            <span class="tag-div">Thrillers</span>
+                            <span class="tag-div">Anticipation</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 LUC. Tous droits réservés</p>
+            <div class="social-links">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
